@@ -136,7 +136,7 @@ pub fn run(filename: []const u8) anyerror![2]u32 {
 
 /// Entrypoint
 pub fn main() !void {
-    const res = run("data/example.txt") catch [_]u32{ 0, 0 };
+    const res = run("data/data.txt") catch [_]u32{ 0, 0 };
     std.log.info("Part 1: {any}, Part 2: {any}", .{ res[0], res[1] });
 }
 
